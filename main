@@ -1,7 +1,7 @@
 if game.PlaceId == 4779613061 then
 
     Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Harlem Hub - Give Money", "Synapse")
+    local Window = Library.CreateLib("Harlem Hub - Cash Sender", "Synapse")
 
     local Main = Window:NewTab("Home")
     local MainSection = Main:NewSection("Home")
