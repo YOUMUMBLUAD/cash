@@ -1,0 +1,235 @@
+if game.PlaceId == 4779613061 then
+
+    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Harlem Hub - Give Money", "Synapse")
+
+    local Main = Window:NewTab("Home")
+    local MainSection = Main:NewSection("Home")
+
+    MainSection:NewKeybind("Toggle UI", "Toggle UI", Enum.KeyCode.RightControl, function()
+        Library:ToggleUI()
+    end)
+
+MainSection:NewTextBox("Send 500", "Allows you to send 500 to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for i,v in pairs(game.Players:GetChildren()) do
+            if (string.sub(string.lower(v.Name),1,string.len(text))) == string.lower(text) then
+            text = v.Name
+            end
+            end
+           
+            local A_1 = "500"
+            local A_2 = game.Players[text]
+            local Event = game:GetService("ReplicatedStorage").Send
+            Event:FireServer(A_1, A_2)
+end)
+
+MainSection:NewTextBox("Send 1000", "Allows you to send 1k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for i,v in pairs(game.Players:GetChildren()) do
+            if (string.sub(string.lower(v.Name),1,string.len(text))) == string.lower(text) then
+            text = v.Name
+            end
+            end
+           
+            local A_1 = "1000"
+            local A_2 = game.Players[text]
+            local Event = game:GetService("ReplicatedStorage").Send
+            Event:FireServer(A_1, A_2)
+end)
+
+MainSection:NewTextBox("Send 5000", "Allows you to send 5k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for i,v in pairs(game.Players:GetChildren()) do
+            if (string.sub(string.lower(v.Name),1,string.len(text))) == string.lower(text) then
+            text = v.Name
+            end
+            end
+           
+            local A_1 = "5000"
+            local A_2 = game.Players[text]
+            local Event = game:GetService("ReplicatedStorage").Send
+            Event:FireServer(A_1, A_2)
+end)
+
+    MainSection:NewTextBox("Send 10,000", "Allows you to send 10k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for i,v in pairs(game.Players:GetChildren()) do
+            if (string.sub(string.lower(v.Name),1,string.len(text))) == string.lower(text) then
+            text = v.Name
+            end
+            end
+           
+            local A_1 = "10000"
+            local A_2 = game.Players[text]
+            local Event = game:GetService("ReplicatedStorage").Send
+            Event:FireServer(A_1, A_2)
+end)
+
+MainSection:NewTextBox("Send 20,000", "Allows you to send 20k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for count = 1,2 do --the number is the times the money is sent
+    wait(0.6)
+local args = {
+    [1] = "10000",
+    [2] = game:GetService("Players")[text]
+}
+
+game:GetService("ReplicatedStorage").Send:FireServer(unpack(args))
+end
+end)
+
+MainSection:NewTextBox("Send 30,000", "Allows you to send 30k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for count = 1,3 do --the number is the times the money is sent
+    wait(0.6)
+local args = {
+    [1] = "10000",
+    [2] = game:GetService("Players")[text]
+}
+
+game:GetService("ReplicatedStorage").Send:FireServer(unpack(args))
+end
+end)
+
+MainSection:NewTextBox("Send 40,000", "Allows you to send 40k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for count = 1,4 do --the number is the times the money is sent
+    wait(0.6)
+local args = {
+    [1] = "10000",
+    [2] = game:GetService("Players")[text]
+}
+
+game:GetService("ReplicatedStorage").Send:FireServer(unpack(args))
+end
+end)
+
+MainSection:NewTextBox("Send 50,000", "Allows you to send 50k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for count = 1,5 do --the number is the times the money is sent
+    wait(0.6)
+local args = {
+    [1] = "10000",
+    [2] = game:GetService("Players")[text]
+}
+
+game:GetService("ReplicatedStorage").Send:FireServer(unpack(args))
+end
+end)
+
+MainSection:NewTextBox("Send 60,000", "Allows you to send 60k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for count = 1,6 do --the number is the times the money is sent
+    wait(0.6)
+local args = {
+    [1] = "10000",
+    [2] = game:GetService("Players")[text]
+}
+
+game:GetService("ReplicatedStorage").Send:FireServer(unpack(args))
+end
+end)
+
+MainSection:NewTextBox("Send 70,000", "Allows you to send 70k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for count = 1,7 do --the number is the times the money is sent
+    wait(0.6)
+local args = {
+    [1] = "10000",
+    [2] = game:GetService("Players")[text]
+}
+
+game:GetService("ReplicatedStorage").Send:FireServer(unpack(args))
+end
+end)
+
+MainSection:NewTextBox("Send 80,000", "Allows you to send 80k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for count = 1,8 do --the number is the times the money is sent
+    wait(0.6)
+local args = {
+    [1] = "10000",
+    [2] = game:GetService("Players")[text]
+}
+
+game:GetService("ReplicatedStorage").Send:FireServer(unpack(args))
+end
+end)
+
+MainSection:NewTextBox("Send 90,000", "Allows you to send 90k to a player", function(text)
+game.StarterGui:SetCore("SendNotification", {
+                        Title = "Send Money";
+                        Text = "Success";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
+for count = 1,9 do --the number is the times the money is sent
+    wait(0.6)
+local args = {
+    [1] = "10000",
+    [2] = game:GetService("Players")[text]
+}
+
+game:GetService("ReplicatedStorage").Send:FireServer(unpack(args))
+end
+end)
+
+else
+    game.Players.LocalPlayer:Kick("Game not supported!")
+end
